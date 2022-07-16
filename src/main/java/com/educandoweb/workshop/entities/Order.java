@@ -18,7 +18,7 @@ import com.educandoweb.workshop.entities.enums.OrderStatus;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 @Entity
-@Table(name = "tl_order")
+@Table(name = "tb_order")
 public class Order implements Serializable{
 
 	private static final long serialVersionUID = 1L;
