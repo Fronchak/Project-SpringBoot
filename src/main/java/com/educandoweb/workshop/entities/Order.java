@@ -120,6 +120,8 @@ public class Order implements Serializable{
 		return Objects.equals(id, other.id);
 	};
 	
-	
+	public Double getTotal() {
+		return this.items.stream().mapToDouble(orderItem -> orderItem.getSubTotal()).sum();
+	}
 	
 }
